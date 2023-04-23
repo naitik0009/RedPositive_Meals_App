@@ -3,7 +3,7 @@ import {useLayoutEffect} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {MEALS} from '../config/dummy-data';
 export const MealDetailsScreen = ({route}) => {
-  // console.log(route.params.props.item.title);
+  
   const navigation = useNavigation();
   const meals = MEALS.find(meal => meal.id === route.params.props.item.id);
   useLayoutEffect(() => {
